@@ -1,4 +1,4 @@
-with stg_customers as (
+dbt docs generatewith stg_customers as (
     -- Pull data from the 'Customers' table in the 'northwind' source
     select * 
     from {{ source('northwind', 'Customers') }}
